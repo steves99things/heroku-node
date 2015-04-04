@@ -21,3 +21,12 @@ app.get('/', function(req, res) {
 app.listen(port, function() {
 	console.log('Our app is running on http://localhost:' + port);
 });
+
+// set a few other page routes to test
+
+app.get('/about', function(req, res) {
+	res.render('about');
+});
+app.get('/contact', function(req, res) {
+	res.render('contact');
+});
